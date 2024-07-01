@@ -36,7 +36,7 @@ def main():
 
     #creating a sidebar for searching predefined cateogories
     st.sidebar.title("Menu")
-    selected_category = st.sidebar.selectbox("Select a Category", ["Nature", "Landscape", "Cityscape", "Animal Kingdom"], on_change=lambda: st.session_state.update({"search": ""}))
+    selected_category = st.sidebar.selectbox("Select a Category", ["Nature", "Landscape", "Cityscape", "Animal Kingdom","Rain","Airplane","Sea"], on_change=lambda: st.session_state.update({"search": ""}))
 
     #creating a search bar to search for custom images   
     custom_category = st.text_input("Search for a custom category:", key="search")
